@@ -1,6 +1,6 @@
 # SLF/RLF Solver
 
-This is a solver I implemented as part of my Master's Thesis, which will be available soon in this repo. It solves the Strong Loop-Freedom (SLF) and Relaxed Loop-Freedom (RLF) Problems as introduced in [1]. The software allows the user to solve any of the two problems either optimally, or using one of the provided heuristics which are faster and provide decent approximations. Details regarding the used techniques and algorithms are available in the Thesis. I will often make reference to Sections or names/definitions introduced in the Thesis.
+This is a solver I implemented as part of my Master's Thesis, which will be available soon in this repo. It solves the Strong Loop-Freedom (SLF) and Relaxed Loop-Freedom (RLF) Problems as introduced in [1]. The software allows the user to solve any of the two problems either optimally, or using one of the provided heuristics which are faster and provide decent approximations. Details regarding the used techniques and algorithms are available in the Thesis. I will often make reference to sections or names/definitions introduced in the Thesis.
 
 &nbsp;
 
@@ -17,7 +17,7 @@ This software has been only tested on Linux. (MacOS should work too in principle
 
 For running the LP-based algorithms **Java** needs to be installed and the *java* command must be added onto the PATH system variable. Moreover, the **Gurobi** library [2] must be present (see section on installation).
 
-For running the inefficient LP introduced in Subsection 3.3.1 of the Thesis **Python 3** is required as well as the library **networkx**. The software expects the command *python3* to launch Python 3. For most users this requirement should be entirely optional, as it is not required for the efficient LP solvers.
+For running the inefficient LP introduced in Section 3.3.1 of the Thesis **Python 3** is required as well as the library **networkx**. The software expects the command *python3* to launch Python 3. For most users this requirement should be entirely optional, as it is not required for the efficient LP solvers.
 
 The **make** command is required, as well as a also a local installation of the **g++** compiler. (These are provided by default on most Linux distributions).
 
@@ -67,12 +67,12 @@ To run the Local Search routine (in Thesis: Algorithm 3 for SLF and Algorithm 6 
 ```
 where **/** is used to point out the different options of this command (*slf* for the SLF variant and *rlf* for the RLF variant).
 
-To apply the (inefficient) LP from Subsection 3.3.1 to solve an instance of the SLF Problem, you can use:
+To apply the (inefficient) LP from Section 3.3.1 to solve an instance of the SLF Problem, you can use:
 ```sh
 ./sdn solveLPinefficient
 ```
 
-To apply the improved (and recommended) LP Algorithms (in Thesis: Subsection 3.3.2 for SLF and Subsection 4.2.1 for RLF), use:
+To apply the improved (and recommended) LP Algorithms (in Thesis: Section 3.3.2 for SLF and Section 4.2.1 for RLF), use:
 ```sh
 ./sdn solveLP fractional/integral slf/rlf
 ```
@@ -120,7 +120,7 @@ To run the Experiment used to generate the data shown in Figure 4.7 (comparison 
 ### Usage generating graphs
 Some interesting types of graphs/instances can be generated in the **sdn.in** file automatically by using certain commands. 
 
-To generate a ShortIsBad instance with *k* purple blocks and 4k+2 nodes (see Subsection 3.1 and Figure 3.1 in Thesis), use:
+To generate a ShortIsBad instance with *k* purple blocks and 4k+2 nodes (see Section 3.1 and Figure 3.1 in Thesis), use:
 ```sh
 ./sdn generate shortIsBad k
 ```
