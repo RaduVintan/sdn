@@ -1,6 +1,6 @@
 # SLF/RLF Solver
 
-This is a solver I implemented as part of my Master's Thesis, which will be available soon in this repo. It solves the Strong Loop-Freedom (SLF) and Relaxed Loop-Freedom (RLF) Problems as introduced in [1]. The software allows the user to solve any of the two problems either optimally, or using one of the provided heuristics which are faster and provide decent approximations. Details regarding the used techniques and algorithms are available in the Thesis. I will often make reference to sections or names/definitions introduced in the Thesis.
+This is a solver I implemented as part of my Master's Thesis, which is also available in this repo. It solves the Strong Loop-Freedom (SLF) and Relaxed Loop-Freedom (RLF) Problems as introduced in [1]. The software allows the user to solve any of the two problems either optimally, or using one of the provided heuristics which are faster and provide decent approximations. Details regarding the used techniques and algorithms are available in the Thesis. I will often make reference to sections or names/definitions introduced in the Thesis.
 
 &nbsp;
 
